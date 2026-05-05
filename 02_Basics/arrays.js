@@ -8,9 +8,6 @@ myarr.shift(33)
 console.log(myarr.includes(6))
 console.log(myarr.indexOf(4))
 
-console.log(myarr.includes(4))
-console.log(myarr.indexOf(6))
-
 const newarr = myarr.join()
 
 console.log(myarr)
