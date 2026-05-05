@@ -18,4 +18,35 @@ function userloggedinMessage(username = "sam"){
     return `${username} just logged in`
 }
 
-console.log(userloggedinMessage())
+// console.log(userloggedinMessage())
+
+function calculateCartPrice(...num1){
+    return num1
+}
+
+// console.log(calculateCartPrice(4, 42, 533))
+
+const user = {
+    name : "Owais",
+    price : 145
+}
+
+function handleObject(anyobject){
+    console.log(`Name is ${anyobject.name} and price is ${anyobject.price}`)
+}
+
+
+// handleObject(user)
+handleObject( {
+    name : "Kala",
+    price : 0
+})
+
+const mynewarray = [133, 422, 3, 31]
+
+function handleArray(getArray){
+    return getArray[1]
+}
+
+// console.log(handleArray(mynewarray))
+console.log(handleArray([34,56,22,6]))
