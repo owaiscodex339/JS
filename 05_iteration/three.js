@@ -24,10 +24,10 @@ for (const [key, value] of map) {
 }
 
 const myObject = {
-    'game1' : 'NFS',
-    'game2' : 'GTA V'
+    game1 : 'NFS',
+    game2 : 'GTA V'
 }
 
-for (const [key, value] of myObject) {
+for (const [key, value] of myObject) { //not iteratable
     console.log(key + " :- " + value)
 }

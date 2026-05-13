@@ -12,5 +12,8 @@ for (const key in myObject) {
 const programming = ["java", "cpp", "python"]
 
 for (const key in programming){
-    console.log(programming[key])
+  //  console.log(key) this will get you keys like 0,1,2,3..
+    console.log(programming[key]) // this prints values
 }
+
+//maps cant be iterated (for in loop)
