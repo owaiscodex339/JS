@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(130, 124, 124);
+    color:white;
+    font-family: Arial;
+}
+
+.main{
+    text-align: center;
+    margin: 0;
+    width: max;
+}
+.heading{
+    background-color: black;
+    
+}
+input{
+    display:block;
+    margin: auto;
+    margin-bottom: 20px;
+    height: 35px;
+    font-size: 20px;
+    text-align : center;
+}
+button{
+    background-color: black;
+    color:white;
+    height: 35px;
+    width: 100px;
+    border-radius: 10px;
+}
