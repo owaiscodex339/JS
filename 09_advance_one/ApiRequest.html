@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            height: 400px;
+            width: 250px;
+            border: solid 1px black;
+            margin: auto;
+            text-align: center;
+        }
+        button{
+            margin-top: 250px;
+            height: 30px;
+            width: 90px;
+            background-color: blueviolet;
+            border: none;
+            border-radius: 20px;
+            color: white;
+        }
+        button:hover{
+            opacity: 0.9;
+            transition: opacity 0.25s;
+        }
+        button:active{
+            opacity: 0.8;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img id="photo" src="" alt="">
+        <p>Followers</p>
+        <p id="followers"></p>
+        <button>Show</button>
+    </div>
+</body>
+<script>
+    const requestUrl = 'https://api.github.com/users/owaiscodex339'
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET', requestUrl)
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState)
+        if(xhr.readyState === 4) {
+            const data = JSON.parse(this.responseText)
+            const text = document.getElementById('followers') 
+            text.innerHTML = data.followers
+        }
+    }
+    xhr.send()
+</script>
+</html>
