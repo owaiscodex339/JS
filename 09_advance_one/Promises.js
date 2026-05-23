@@ -53,7 +53,7 @@ promiseFour.then((user)=>{
 
 const promiseFive = new Promise(function(resolve,reject){
     setTimeout(function(){
-        let error =  true
+        let error = true
         if(!error){
             resolve({username:"JavaScript",pass:"123"})
         }else{
@@ -63,8 +63,32 @@ const promiseFive = new Promise(function(resolve,reject){
 })
 
 async function consumePromiseFive(){
-    const response = await promiseFive
-    console.log(response)
+    try {
+        const response = await promiseFive
+        console.log(response)
+    } catch (error) {
+        console.log(error)
+    }
 }
 
 consumePromiseFive()
+
+// async function getAllUsers(){
+//     try {
+//         const response = await fetch('https://api.github.com/users/owaiscodex339')
+//         const data = await response.json()
+//         console.log(data)
+//     } catch (error) {
+//         console.log("E: ",error)
+//     }
+// }
+// getAllUsers()
+
+fetch('https://api.github.com/users/owaiscodex339')
+.then((response)=>{
+    return response.json()
+})
+.then((data)=>{
+    console.log(data)
+})
+.catch((error)=> console.log(error))
