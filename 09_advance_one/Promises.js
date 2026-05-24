@@ -73,16 +73,16 @@ async function consumePromiseFive(){
 
 consumePromiseFive()
 
-// async function getAllUsers(){
-//     try {
-//         const response = await fetch('https://api.github.com/users/owaiscodex339')
-//         const data = await response.json()
-//         console.log(data)
-//     } catch (error) {
-//         console.log("E: ",error)
-//     }
-// }
-// getAllUsers()
+async function getAllUsers(){
+    try {
+        const response = await fetch('https://api.github.com/users/owaiscodex339')
+        const data = await response.json()
+        console.log(data)
+    } catch (error) {
+        console.log("E: ",error)
+    }
+}
+getAllUsers()
 
 fetch('https://api.github.com/users/owaiscodex339')
 .then((response)=>{
