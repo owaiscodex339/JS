@@ -23,10 +23,10 @@
 // console.log(countVowels("javascript"))
 
 // let myArr = [12,34,14,5,63,24]
-// let largeVal;
+// let largeVal = 0;
 // for(let i = 0; i < myArr.length; i++){
                                                  //3
-//     if(myArr[i] > myArr[i+1]){
+//     if(myArr[i] > largeVal){
 //         largeVal = myArr[i]
 //     }
 // }
